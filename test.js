@@ -8,4 +8,6 @@ ergo.toUSD(ergoAmount).then((usdAmount) => {
 	assert(usdAmount > ergoAmount);
 });
 
+ergo.fetchTicker().then((ticker) => console.log(ticker));
+
 console.log("OK");
